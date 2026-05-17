@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prenota il Tavolo — Calderisi Ristorante</title>
+  <meta name="description" content="Prenota il tuo tavolo al ristorante Calderisi Mare Beach Club. Scegli data, orario e numero di coperti. Orari: 12:15 – 17:00." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="https://www.calderisimare.com/">Calderisi <span>Mare</span></a>
+    <a class="header-book-btn" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">🍽 Prenota Ristorante</a>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero-band">
+    <h1>Prenota il Tuo Tavolo</h1>
+    <p>Calderisi Mare Beach Club &mdash; Ristorante &amp; Spiaggia</p>
+    <div class="hero-notices">
+      <span class="hero-notice">🕐 Orari: 12:15 – 17:00</span>
+      <span class="hero-notice">🐾 Animali non ammessi</span>
+      <span class="hero-notice">🍕 Dalle 16:00 solo Pizzeria</span>
+    </div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-wrapper">
+    <div class="progress-steps">
+      <div class="step-item active" id="si-1">
+        <div class="step-bubble">1</div>
+        <div class="step-label">Condizioni</div>
+      </div>
+      <div class="step-item" id="si-2">
+        <div class="step-bubble">2</div>
+        <div class="step-label">Data &amp; Ora</div>
+      </div>
+      <div class="step-item" id="si-3">
+        <div class="step-bubble">3</div>
+        <div class="step-label">Coperti</div>
+      </div>
+      <div class="step-item" id="si-4">
+        <div class="step-bubble">4</div>
+        <div class="step-label">I Tuoi Dati</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main-container">
+
+    <!-- ═══ STEP 1: TERMINI E CONDIZIONI ═══ -->
+    <div class="step-panel active" id="step-1">
+      <div class="card">
+        <h2 class="card-title">Termini e Condizioni</h2>
+        <div class="divider"></div>
+        <p class="card-subtitle">Leggi e accetta prima di procedere</p>
+
+        <div class="terms-box">
+          <h3>Termini e Condizioni di Prenotazione</h3>
+          <p>Benvenuto nel sistema di prenotazione di Calderisi Mare Beach Club. Effettuando una prenotazione accetti integralmente i seguenti termini e condizioni.</p>
+          <br>
+          <p><strong>Prenotazione e Conferma</strong><br>
+          La prenotazione si intende confermata al ricevimento della comunicazione di conferma via email o WhatsApp da parte del nostro staff. Calderisi Mare si riserva il diritto di non accettare prenotazioni senza fornire motivazione.</p>
+          <br>
+          <p><strong>Cancellazione</strong><br>
+          Le cancellazioni devono essere comunicate almeno 24 ore prima dell'orario di prenotazione. In caso di cancellazione tardiva o mancata presentazione (no-show) per gruppi superiori a 6 persone, Calderisi Mare si riserva il diritto di addebitare una penale di <strong>€25,00 a persona</strong> sulla carta di credito fornita a garanzia.</p>
+          <br>
+          <p><strong>Ritardi</strong><br>
+          Il tavolo verrà tenuto per un massimo di 15 minuti oltre l'orario prenotato. In caso di ritardo superiore, il tavolo potrebbe essere assegnato ad altri ospiti.</p>
+          <br>
+          <p><strong>Gruppi &gt; 6 Persone</strong><br>
+          Per prenotazioni superiori a 6 coperti è richiesta una carta di credito valida come garanzia. In caso di no-show o cancellazione tardiva verrà addebitata una penale di <strong>€25,00 a persona</strong>. I dati della carta vengono trattati in modo sicuro e non verranno addebitati in altri casi.</p>
+          <br>
+          <p><strong>Animali</strong><br>
+          L'accesso con animali domestici non è consentito all'interno del ristorante e nelle aree di servizio.</p>
+          <br>
+          <p><strong>Allergie e Intolleranze</strong><br>
+          Si prega di comunicare eventuali allergie o intolleranze alimentari al momento della prenotazione o all'arrivo. Il nostro staff farà di tutto per accomodarvi al meglio.</p>
+          <br>
+          <p><strong>Responsabilità</strong><br>
+          Calderisi Mare non è responsabile per oggetti smarriti o danneggiati all'interno della struttura.</p>
+        </div>
+
+        <div class="terms-box" style="margin-top: 16px;">
+          <h3>Privacy Policy</h3>
+          <p>I dati personali forniti (nome, cognome, email, telefono) saranno trattati da Calderisi Mare esclusivamente per la gestione della prenotazione e per comunicazioni correlate, nel rispetto del Regolamento UE 2016/679 (GDPR).</p>
+          <br>
+          <p><strong>Titolare del Trattamento</strong><br>
+          Calderisi Mare S.r.l. — relax@calderisimare.com</p>
+          <br>
+          <p><strong>Finalità</strong><br>
+          I dati sono trattati al solo scopo di confermare e gestire la prenotazione del tavolo. Non saranno ceduti a terzi né utilizzati per finalità di marketing senza esplicito consenso.</p>
+          <br>
+          <p><strong>Conservazione</strong><br>
+          I dati saranno conservati per un periodo non superiore a 12 mesi dalla data della prenotazione.</p>
+          <br>
+          <p><strong>Diritti dell'Interessato</strong><br>
+          Hai il diritto di accedere, rettificare o cancellare i tuoi dati in qualsiasi momento scrivendo a relax@calderisimare.com.</p>
+        </div>
+
+        <div class="checkbox-group" style="margin-top: 24px;">
+          <label class="checkbox-label">
+            <input type="checkbox" id="chk-tc" />
+            <span>Ho letto e accetto i <a href="#" onclick="return false;">Termini e Condizioni</a> di prenotazione di Calderisi Mare</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="chk-privacy" />
+            <span>Ho letto e accetto la <a href="#" onclick="return false;">Privacy Policy</a> e acconsento al trattamento dei miei dati personali</span>
+          </label>
+        </div>
+
+        <button class="btn-primary" id="btn-step1" disabled onclick="goToStep(2)">
+          Continua
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ═══ STEP 2: DATA E ORARIO ═══ -->
+    <div class="step-panel" id="step-2">
+      <div class="card">
+        <h2 class="card-title">Data e Orario</h2>
+        <div class="divider"></div>
+        <p class="card-subtitle">Seleziona quando vorresti venire</p>
+
+        <div class="form-section">
+          <label class="form-label" for="booking-date">Data della prenotazione</label>
+          <input class="date-input" type="date" id="booking-date" />
+          <div class="field-error" id="err-date">Seleziona una data valida</div>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label">Orario</label>
+
+          <div class="time-group-label">🍽 Ristorante — 12:15 · 15:30</div>
+          <div class="time-pills" id="pills-ristorante">
+            <button class="time-pill" data-time="12:15" onclick="selectTime(this)">12:15</button>
+            <button class="time-pill" data-time="12:45" onclick="selectTime(this)">12:45</button>
+            <button class="time-pill" data-time="13:15" onclick="selectTime(this)">13:15</button>
+            <button class="time-pill" data-time="13:45" onclick="selectTime(this)">13:45</button>
+            <button class="time-pill" data-time="14:15" onclick="selectTime(this)">14:15</button>
+            <button class="time-pill" data-time="14:45" onclick="selectTime(this)">14:45</button>
+            <button class="time-pill" data-time="15:15" onclick="selectTime(this)">15:15</button>
+            <button class="time-pill" data-time="15:30" onclick="selectTime(this)">15:30</button>
+          </div>
+
+          <div class="time-group-label" style="margin-top:16px;">🍕 Pizzeria — 16:00 · 17:00</div>
+          <div class="time-pills" id="pills-pizzeria">
+            <button class="time-pill time-pill--pizzeria" data-time="16:00" onclick="selectTime(this)">16:00</button>
+            <button class="time-pill time-pill--pizzeria" data-time="16:30" onclick="selectTime(this)">16:30</button>
+            <button class="time-pill time-pill--pizzeria" data-time="17:00" onclick="selectTime(this)">17:00</button>
+          </div>
+          <div class="pizzeria-note">🐾 Animali non ammessi in tutte le aree</div>
+
+          <div class="field-error" id="err-time" style="margin-top:8px;">Seleziona un orario</div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-secondary" onclick="goToStep(1)">Indietro</button>
+          <button class="btn-primary" onclick="validateStep2()">
+            Continua
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ STEP 3: COPERTI ═══ -->
+    <div class="step-panel" id="step-3">
+      <div class="card">
+        <h2 class="card-title">Numero di Coperti</h2>
+        <div class="divider"></div>
+        <p class="card-subtitle">Quante persone sarete?</p>
+
+        <div class="covers-grid">
+          <button class="cover-btn" data-covers="1" onclick="selectCover(this)">1</button>
+          <button class="cover-btn" data-covers="2" onclick="selectCover(this)">2</button>
+          <button class="cover-btn" data-covers="3" onclick="selectCover(this)">3</button>
+          <button class="cover-btn" data-covers="4" onclick="selectCover(this)">4</button>
+          <button class="cover-btn" data-covers="5" onclick="selectCover(this)">5</button>
+          <button class="cover-btn" data-covers="6" onclick="selectCover(this)">6</button>
+          <button class="cover-btn custom-btn" data-covers="custom" onclick="selectCover(this)" style="grid-column: span 2;">Personalizzato</button>
+        </div>
+
+        <div class="custom-input-wrap" id="custom-input-wrap">
+          <label class="form-label" for="custom-covers">Numero di persone</label>
+          <input class="date-input" type="number" id="custom-covers" min="7" max="100" placeholder="Es. 10" oninput="updateCustomCovers()" />
+        </div>
+
+        <div class="alert-banner" id="cc-alert">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#c8a96e" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+          </svg>
+          <span>Per gruppi superiori a 6 persone sarà necessario fornire i dati di una carta di credito come garanzia. In caso di no-show o cancellazione tardiva verrà addebitata una penale di <strong>€25,00 a persona</strong>. La carta non verrà addebitata in altri casi.</span>
+        </div>
+
+        <div class="field-error" id="err-covers" style="margin-top:12px;">Seleziona il numero di coperti</div>
+
+        <div class="btn-row">
+          <button class="btn-secondary" onclick="goToStep(2)">Indietro</button>
+          <button class="btn-primary" onclick="validateStep3()">
+            Continua
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ STEP 4: DATI PERSONALI ═══ -->
+    <div class="step-panel" id="step-4">
+      <div class="card">
+        <h2 class="card-title">I Tuoi Dati</h2>
+        <div class="divider"></div>
+        <p class="card-subtitle">Riepilogo e informazioni di contatto</p>
+
+        <!-- RECAP -->
+        <div class="recap-box" id="recap-box">
+          <div class="recap-item">
+            <span>Data</span>
+            <span id="recap-date">—</span>
+          </div>
+          <div class="recap-item">
+            <span>Orario</span>
+            <span id="recap-time">—</span>
+          </div>
+          <div class="recap-item">
+            <span>Coperti</span>
+            <span id="recap-covers">—</span>
+          </div>
+        </div>
+
+        <!-- PERSONAL DATA -->
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="f-nome">Nome *</label>
+            <input class="input-field" type="text" id="f-nome" placeholder="Mario" autocomplete="given-name" />
+            <div class="field-error" id="err-nome">Campo obbligatorio</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-cognome">Cognome *</label>
+            <input class="input-field" type="text" id="f-cognome" placeholder="Rossi" autocomplete="family-name" />
+            <div class="field-error" id="err-cognome">Campo obbligatorio</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-telefono">Telefono *</label>
+            <input class="input-field" type="tel" id="f-telefono" placeholder="+39 333 1234567" autocomplete="tel" />
+            <div class="field-error" id="err-telefono">Inserisci un numero valido</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-email">Email *</label>
+            <input class="input-field" type="email" id="f-email" placeholder="mario@email.com" autocomplete="email" />
+            <div class="field-error" id="err-email">Inserisci una email valida</div>
+          </div>
+          <div class="form-group full">
+            <label class="form-label" for="f-note">Note (facoltativo)</label>
+            <textarea class="input-field" id="f-note" rows="3" placeholder="Allergie, intolleranze, richieste speciali…" style="resize:vertical;"></textarea>
+          </div>
+        </div>
+
+        <!-- CREDIT CARD SECTION (shown if > 6 covers) -->
+        <div class="card-section" id="cc-section">
+          <h3 class="card-section-title">Garanzia con Carta di Credito</h3>
+          <div class="card-section-note">
+            🔒 I dati della carta sono richiesti come garanzia per gruppi superiori a 6 persone. In caso di no-show o cancellazione con meno di 24 ore di preavviso, verrà addebitata una penale di <strong>€25,00 a persona</strong>. La carta non verrà addebitata in altri casi.
+          </div>
+          <div class="form-grid">
+            <div class="form-group full">
+              <label class="form-label" for="cc-numero">Numero Carta *</label>
+              <div class="card-number-wrap">
+                <input class="input-field" type="text" id="cc-numero" placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCardNumber(this)" autocomplete="cc-number" />
+                <svg class="card-icon" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path stroke-linecap="round" d="M2 10h20"/></svg>
+              </div>
+              <div class="field-error" id="err-cc-numero">Inserisci un numero carta valido</div>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="cc-intestatario">Nome Intestatario *</label>
+              <input class="input-field" type="text" id="cc-intestatario" placeholder="MARIO ROSSI" style="text-transform:uppercase;" autocomplete="cc-name" />
+              <div class="field-error" id="err-cc-intestatario">Campo obbligatorio</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cc-scadenza">Scadenza *</label>
+              <input class="input-field" type="text" id="cc-scadenza" placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)" autocomplete="cc-exp" />
+              <div class="field-error" id="err-cc-scadenza">Formato non valido</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cc-cvv">CVV *</label>
+              <input class="input-field" type="text" id="cc-cvv" placeholder="123" maxlength="4" oninput="this.value=this.value.replace(/\D/g,'')" autocomplete="cc-csc" />
+              <div class="field-error" id="err-cc-cvv">CVV non valido</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REMINDER NOTIFICATION TOGGLE -->
+        <div class="reminder-wrap" id="reminder-wrap">
+          <label class="reminder-label" for="chk-reminder">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+            <span>Ricordamelo il giorno della prenotazione alle ore 10:00 con una notifica</span>
+            <input type="checkbox" id="chk-reminder" />
+            <span class="reminder-toggle"></span>
+          </label>
+          <div class="reminder-note" id="reminder-note"></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-secondary" onclick="goToStep(3)">Indietro</button>
+          <button class="btn-primary" onclick="validateStep4()" id="btn-prenota">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Prenota il Tavolo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ SUCCESS ═══ -->
+    <div class="step-panel" id="step-success">
+      <div class="card">
+        <div class="success-icon">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24">
+            <path class="success-check" stroke="#2b5d5d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Prenotazione Confermata!</h2>
+        <div class="divider" style="margin: 12px auto 20px;"></div>
+        <p>Grazie! La tua prenotazione è stata ricevuta.<br>Riceverai una conferma via email e WhatsApp a breve.<br>Non vediamo l'ora di accoglierti! 🌊</p>
+        <div id="success-reminder-msg" style="display:none;" class="success-reminder-pill">🔔 Ti invieremo un reminder alle 10:00 del giorno della prenotazione</div>
+
+        <div class="success-recap" id="success-recap">
+          <div class="recap-item">
+            <span>Data</span>
+            <span id="s-date">—</span>
+          </div>
+          <div class="recap-item">
+            <span>Orario</span>
+            <span id="s-time">—</span>
+          </div>
+          <div class="recap-item">
+            <span>Coperti</span>
+            <span id="s-covers">—</span>
+          </div>
+          <div class="recap-item">
+            <span>Nominativo</span>
+            <span id="s-name">—</span>
+          </div>
+        </div>
+
+        <a class="whatsapp-btn" href="https://wa.me/393453991282" target="_blank">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contattaci su WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    &copy; 2026 Calderisi Mare &mdash; By Masseria Calderisi &mdash; <a href="mailto:relax@calderisimare.com" style="color:inherit;">relax@calderisimare.com</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
